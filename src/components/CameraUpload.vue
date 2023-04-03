@@ -1,4 +1,3 @@
-<!-- src/components/CameraUpload.vue -->
 <template>
   <div>
     <input
