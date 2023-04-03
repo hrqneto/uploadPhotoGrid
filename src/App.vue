@@ -1,9 +1,9 @@
 <template>
   <div class="container">
-    <CameraUpload @photo-uploaded="addPhoto" />
     <div v-if="photos.length" class="mt-8">
       <PhotoGrid :photos="photos" />
     </div>
+    <CameraUpload @photo-uploaded="addPhoto" />
   </div>
 </template>
 
@@ -24,9 +24,6 @@ const addPhoto = async (file) => {
 </script>
 
 <style>
-.container {
-  padding: 1rem;
-}
 .mt-8 {
   margin-top: 2rem;
 }
